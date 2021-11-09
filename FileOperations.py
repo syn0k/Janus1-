@@ -13,17 +13,21 @@
 # read the file and print text
 # add text in file "bla2 bla2 bla2"
 # read the file and print text
+# read current directory
 # delete file :) relax
 import os
 
 
-def check_exist_file():
+def read_current_directory():
+    filep = os.listdir()
+    for entry in filep:
+        print(filep)
 
 
-    def delete_exist_file():
+# def delete_exist_file():
 
-
-    def create_file():
+# def check_exist_file():
+# def create_file():
 
 
 def write_file():
@@ -37,7 +41,6 @@ def read_file():
     for entry in file:
         print(entry)
 
-
 def add_write_file():
     file = open("test.txt", "a")
     file.write("Write file information - bla2 bla2 bla2\n")
@@ -45,7 +48,12 @@ def add_write_file():
 
 
 def delete_file():
-    os.remove("test.txt")
+    try:
+        os.remove("test.txt")
+    except:
+        print("File not exists")
 
 
 if __name__ == "__main__":
+    delete_file()
+    read_current_directory()
