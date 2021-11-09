@@ -18,7 +18,7 @@
 import os
 
 
-def read_current_directory():
+def read_current_directory_files():
     filep = os.listdir()
     for entry in filep:
         print(filep)
@@ -31,7 +31,7 @@ def read_current_directory():
 
 
 def write_file():
-    file = open("test.txt", "a")
+    file = open("test.txt", "w")
     file.write("Write file information - bla bla bla\n")
     file.close()
 
@@ -56,4 +56,4 @@ def delete_file():
 
 if __name__ == "__main__":
     delete_file()
-    read_current_directory()
+    read_current_directory_files()
