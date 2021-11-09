@@ -26,7 +26,9 @@ def list_current_directory_files():
 # def delete_exist_file():
 
 # def check_exist_file():
-# def create_file():
+def create_file():
+    file = open("test.txt", "a")
+    file.close()
 
 
 def write_file():
@@ -55,4 +57,5 @@ def delete_file():
 
 if __name__ == "__main__":
     # delete_file()
+    delete_file()
     list_current_directory_files()
