@@ -18,10 +18,9 @@
 import os
 
 
-def read_current_directory_files():
-    filep = os.listdir()
-    for entry in filep:
-        print(filep)
+def list_current_directory_files():
+    for entry in os.listdir():
+        print(entry)
 
 
 # def delete_exist_file():
@@ -55,5 +54,5 @@ def delete_file():
 
 
 if __name__ == "__main__":
-    delete_file()
-    read_current_directory_files()
+    # delete_file()
+    list_current_directory_files()
