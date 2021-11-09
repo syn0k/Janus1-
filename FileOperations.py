@@ -14,3 +14,38 @@
 # add text in file "bla2 bla2 bla2"
 # read the file and print text
 # delete file :) relax
+import os
+
+
+def check_exist_file():
+
+
+    def delete_exist_file():
+
+
+    def create_file():
+
+
+def write_file():
+    file = open("test.txt", "a")
+    file.write("Write file information - bla bla bla\n")
+    file.close()
+
+
+def read_file():
+    file = open("test.txt", "r")
+    for entry in file:
+        print(entry)
+
+
+def add_write_file():
+    file = open("test.txt", "a")
+    file.write("Write file information - bla2 bla2 bla2\n")
+    file.close()
+
+
+def delete_file():
+    os.remove("test.txt")
+
+
+if __name__ == "__main__":
