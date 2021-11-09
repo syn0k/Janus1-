@@ -18,14 +18,21 @@
 import os
 
 
+# list file
 def list_current_directory_files():
     for entry in os.listdir():
         print(entry)
 
 
-# def delete_exist_file():
+def check_exist_file():
+    try:
+        file = os.path.exists("test.txt")
+        if file == True:
+            print("File exists")
+    except:
+        print("File NOT exists")
 
-# def check_exist_file():
+
 def create_file():
     file = open("test.txt", "a")
     file.close()
@@ -48,7 +55,7 @@ def add_write_file():
     file.close()
 
 
-def delete_file():
+def delete_exist_file():
     try:
         os.remove("test.txt")
     except:
@@ -56,6 +63,6 @@ def delete_file():
 
 
 if __name__ == "__main__":
-    # delete_file()
-    delete_file()
-    list_current_directory_files()
+# delete_exist_file()
+# check_exist_file()
+# list_current_directory_files()
