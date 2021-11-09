@@ -13,4 +13,4 @@ print("My first programm {2} {1} {0}".format(strhw0, strhw1, strhw2))
 pi = 3.1415
 print("it's PI string formatting:{pi:1.2f}".format(pi=pi))  # is's PI 3.14
 
-print("My first programm {strhw0} {strhw1} {strhw2}")
+print(f"My first programm {strhw0} {strhw1} {strhw2}")

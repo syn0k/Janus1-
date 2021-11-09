@@ -9,4 +9,4 @@
 # '__cached__': None}
 
 if __name__ == "__main__":
-    print(globals())  # print globals
+    print(globals())  # print globals var
