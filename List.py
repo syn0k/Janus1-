@@ -41,13 +41,18 @@ print(f'Print big list pop -1 {big_list}')
 big_list.pop(1)  # index = 1
 print(f'Print big list pop index 1  {big_list}')
 
-int_list.sort()
+int_list.sort(key=None, reverse=True)
 print(f'Print sort {int_list}')
 
-thislist = [1, 2.0, 'string', 4, 'more', 6, 7, 'HelloWorld', 9, 10, 1, 32, 35, 41, 59, 65, 73, 822, 922, 101,
+thislist = [1, 2.0, 'string', 4, 'HelloWord2', 'more', 6, 7, 'HelloWorld', 9, 10, 1, 32, 35, 41, 59, 65, 73, 822, 922,
+            101,
             'HelloWord2']
 if 'HelloWorld' in thislist:
     print("Yes, HelloWorld")
+
+# count()	Returns the number of elements with the specified value
+print(thislist.count('HelloWord2'))
+print(type(thislist.count('HelloWord2')))  # int
 
 print(len(int_list))
 print(len(mixed_list))
