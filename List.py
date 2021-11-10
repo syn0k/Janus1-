@@ -3,6 +3,9 @@ n = 0
 int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 mixed_list = [1, 2.0, 'string', 4, "more", 6, 7, 'HelloWorld', 9, 10]
 
+big_list = mixed_list + int_list
+print(f'Print big list {big_list}')
+
 print(len(int_list))
 print(len(mixed_list))
 
