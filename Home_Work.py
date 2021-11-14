@@ -6,7 +6,7 @@
 # *
 # **
 
-print('#My decision, task 1')
+print('#My decision task 1')
 try:
     PleaseInput_int = int(input('Please input the number\n'))
     ch = ''
