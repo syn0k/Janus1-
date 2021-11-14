@@ -68,3 +68,17 @@ print(f'Print difference - {set1}')
 # update()	Update the set with the union of this set and others
 set1.update(set2)
 print(f'Print update - {set1}')
+
+# remove()	Removes the specified element
+# discard()	Remove the specified item
+# pop()	Removes an element from the set
+# set1 = {1, 2, 3, 4, 5, 6, 7, 8}
+# set2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+set1.remove(8)
+print(f'Print remove 8 - {set1}')
+
+# we haven't 100 but we try delete 100
+set1.discard(100)
+print(f'Print remove 100 - {set1}')
+# class 'set'
+print(type(set1))
