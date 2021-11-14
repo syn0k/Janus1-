@@ -82,3 +82,6 @@ set1.discard(100)
 print(f'Print remove 100 - {set1}')
 # class 'set'
 print(type(set1))
+
+set1.clear()  # :))
+print(set1)
