@@ -48,5 +48,5 @@ for entry in string_text:
         print(entry)
 
 city = [('Anacortes', 1961), ('Bellevue', 2021), ('Bellingham', 1980), ('Chewelah', 1972)]
-for name, year in city:
+for (name, year) in city:
     print(f'Founding of the city of {name}, in  {year} year')
