@@ -46,7 +46,25 @@ print(f'Print set {myset}')
 
 # Check the item
 print('car' in myset)
-# if 'car' in myset:
-#     print('The item not exist the myset')
-# else:
-#     print('The item exist the myset')
+
+# issubset()	Returns whether another set contains this set or not
+# issuperset()	Returns whether this set contains another set or not
+# isdisjoint()	Returns whether two sets have a intersection or not
+set1 = {1, 2, 3, 4, 5, 6, 7, 8}
+set2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+set3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+print(f'Print issubset - {set1.issubset(set2)}')
+print(f'Print issuperset - {set2.issuperset(set1)}')
+print(f'Print isdisjoint - {set2.isdisjoint(set1)}')
+
+# union()	Return a set containing the union of sets
+# intersection()	Returns a set, that is the intersection of two other sets
+# difference()	Returns a set containing the difference between two or more sets
+print(f'Print onion {set1.union(set2)}')
+print(f'Print intersection - {set1.intersection(set2)}')
+set1.difference(set3)
+print(f'Print difference - {set1}')
+
+# update()	Update the set with the union of this set and others
+set1.update(set2)
+print(f'Print update - {set1}')
