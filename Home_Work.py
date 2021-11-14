@@ -6,7 +6,7 @@
 # *
 # **
 
-print('#My decision task 1')
+print('#My decision, task 1')
 try:
     PleaseInput_int = int(input('Please input the number\n'))
     ch = ''
@@ -18,7 +18,7 @@ try:
 except ValueError:
     print("That's not an int!\nPlease input the number\n")
 
-print('#Teacher''s decision task 1')
+print('#Teacher''s decision, task 1')
 PleaseInput_int = int(input('Please input the number\n'))
 for x in range(PleaseInput_int):
     print('*' * (x + 1))
@@ -29,7 +29,7 @@ for x in range(PleaseInput_int):
 # 1 is ODD
 # 2 is EVEN
 # etc...
-print('#My decision task 2')
+print('#My decision, task 2')
 try:
     PleaseInput = input('Please input the number, We will check even or odd  \n')
     # debug print(type(PleaseInput))
@@ -47,7 +47,7 @@ try:
 except ValueError:
     print("That's not an int!\nPlease input the number\n")
 
-print('#Teacher''s decision task 2')
+print('#Teacher''s decision, task 2')
 PleaseInput_int = int(input('Please input the number\n'))
 for x in range(PleaseInput_int + 1):
     if x % 2 == 0:
