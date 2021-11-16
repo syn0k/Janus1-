@@ -23,8 +23,7 @@ import random
 # When the user enters a number, the computer checks whether the number is guessed and,
 # if not guessed, then reports whether the guessed number is less or more.
 # If the user guessed it, it informs that the number is guessed.
-print('#My decision, task 8')
-
+# print('#My decision, task 8')
 rnd_int = random.randint(1, 50)
 input_count = 1
 while input_count < 7:
@@ -64,3 +63,20 @@ while input_count < 7:
             print(f"closer {rnd_int}'")
     else:
         print("The number is not included in the interval  ")
+
+print('#Teacher''s decision, task 8')
+number = random.randint(1, 50)
+trues = 0
+while trues < 6:
+    guess = int(input('Enter the interval number range 1 - 50\n'))
+    trues += 1
+    if trues < guess:
+        print("too low")
+    if trues > guess:
+        print("too high")
+    if trues == guess:
+        print("You Wins")
+        break
+    if number != guess and trues == 6:
+        print(f"Sorry, but you dont't make it. My number was: {rnd_int}")
+        break
