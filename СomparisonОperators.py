@@ -15,6 +15,7 @@ if __name__ == "__main__":
     y = "string"
     print(x.lower() == y.lower())  # strings are equal = True
 
+
     print(1 < 2 < 3)  # True
     print(1 < 2 and 2 < 3)  # True
     print(1 > 2 and 2 < 3)  # False

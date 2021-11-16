@@ -27,6 +27,7 @@ while x < 1:
             x = 2
             break
 
+
 print('#Teacher''s decision, task 9')
 sh_cont = True
 while sh_cont:
@@ -34,6 +35,7 @@ while sh_cont:
     if pl_ch not in ['r', 's', 'p']:
         print('Try again')
         continue
+
     gen = {1: 'r', 2: 's', 3: 'p'}
     comp_ch = gen[random.randint(1, 2)]
     print(f'Comp choise: {comp_ch}')
