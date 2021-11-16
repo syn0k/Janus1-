@@ -27,19 +27,19 @@ print('#My decision, task 8')
 
 rnd_int = random.randint(1, 50)
 input_count = 1
-while input_count == 6:
-    input_number = int(input('Enter the interval number range 1 - 50'))
+while input_count < 7:
+    input_number = int(input('Enter the interval number range 1 - 50\n'))
+
     input_count += 1
-    # input_count += 1
-    # if input_number in range(1,9):
-    #    print(f" {rnd_int}'")
-    # elif input_number in range(10,19):
-    #    print(f" {rnd_int}'")
-    # elif input_number in range(20, 29):
-    #    print(f" {rnd_int}'")
-    # elif input_number in range(30, 39):
-    #    print(f" {rnd_int}'")
-    # elif input_number in range(40, 50):
-    #     print(f" {rnd_int}'")
-    # else:
-    #     print("The number is not included in the interval  ")
+    if input_number in range(1, 9):
+        print(f"closer 1 {rnd_int}'")
+    elif input_number in range(10, 19):
+        print(f"closer 2 {rnd_int}'")
+    elif input_number in range(20, 29):
+        print(f"closer 3 {rnd_int}'")
+    elif input_number in range(30, 39):
+        print(f"closer 4 {rnd_int}'")
+    elif input_number in range(40, 50):
+        print(f"closer 5 {rnd_int}'")
+    else:
+        print("The number is not included in the interval  ")
