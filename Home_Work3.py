@@ -1,0 +1,45 @@
+import random
+
+#
+# print('#Teacher''s decision, task 7')
+# number = int(input('Enter the number\n'))
+#
+# reversed_number = 0
+# tmp_original = number
+# while tmp_original > 0:
+#     reversed_number = (reversed_number*10) + tmp_original % 10
+#     print(reversed_number)
+#     print(tmp_original)
+#
+#     tmp_original = tmp_original // 10
+#
+# if number == reversed_number:
+#     print('Palindrome')
+# else:
+#     print('Np Palindrome')
+
+
+# The computer guesses a number from 1 to 50 and gives 6 attempts to the user so that he can guess the guessed number.
+# When the user enters a number, the computer checks whether the number is guessed and,
+# if not guessed, then reports whether the guessed number is less or more.
+# If the user guessed it, it informs that the number is guessed.
+print('#My decision, task 8')
+
+rnd_int = random.randint(1, 50)
+input_count = 1
+while input_count == 6:
+    input_number = int(input('Enter the interval number range 1 - 50'))
+    input_count += 1
+    # input_count += 1
+    # if input_number in range(1,9):
+    #    print(f" {rnd_int}'")
+    # elif input_number in range(10,19):
+    #    print(f" {rnd_int}'")
+    # elif input_number in range(20, 29):
+    #    print(f" {rnd_int}'")
+    # elif input_number in range(30, 39):
+    #    print(f" {rnd_int}'")
+    # elif input_number in range(40, 50):
+    #     print(f" {rnd_int}'")
+    # else:
+    #     print("The number is not included in the interval  ")
