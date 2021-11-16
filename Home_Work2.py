@@ -43,8 +43,8 @@ print(f'Summa - {arg_list}')
 # The input is two lists of numbers of length N.
 # Problem: Take all odd numbers from the first list,
 # from the second even ones and combine them in a new list called joiner_list.
+print('#My decision, task 4')
 
-#
 first_lst = 10
 second_lst = 10
 arg_list1 = []
@@ -65,4 +65,13 @@ for x in range(second_lst + 1):
 joined_list = arg_list1 + arg_list2
 
 print(joined_list)  # debug
-#print(f'{joiner_list}')
+# print(f'{joiner_list}')
+
+print('#Teacher''s decision, task 4')
+first_list = [1, 2, 3, 4, 5, 6]
+second_list = [11, 12, 13, 14, 15]
+odd = [x for x in first_list if x % 2 != 0]
+even = [x for x in second_list if x % 2 == 0]
+joined_list = odd + even
+
+print(f'Print joined_list {joined_list}')
