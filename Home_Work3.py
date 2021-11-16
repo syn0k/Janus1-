@@ -1,23 +1,22 @@
 import random
 
 #
-# print('#Teacher''s decision, task 7')
-# number = int(input('Enter the number\n'))
-#
-# reversed_number = 0
-# tmp_original = number
-# while tmp_original > 0:
-#     reversed_number = (reversed_number*10) + tmp_original % 10
-#     print(reversed_number)
-#     print(tmp_original)
-#
-#     tmp_original = tmp_original // 10
-#
-# if number == reversed_number:
-#     print('Palindrome')
-# else:
-#     print('Np Palindrome')
+print('#Teacher''s decision, task 7')
+number = int(input('Enter the number\n'))
 
+reversed_number = 0
+tmp_original = number
+while tmp_original > 0:
+    reversed_number = (reversed_number * 10) + tmp_original % 10
+    print(reversed_number)
+    print(tmp_original)
+
+    tmp_original = tmp_original // 10
+
+if number == reversed_number:
+    print('Palindrome')
+else:
+    print('Np Palindrome')
 
 # The computer guesses a number from 1 to 50 and gives 6 attempts to the user so that he can guess the guessed number.
 # When the user enters a number, the computer checks whether the number is guessed and,
