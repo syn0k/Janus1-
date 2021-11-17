@@ -1,4 +1,4 @@
-# MAP
+# # MAP
 def print_me(age):
     return age*age
 
@@ -12,12 +12,29 @@ print(list(map(print_me, numbers)))
 
 # Filter
 
-def is_adult(age):
-    return age >= 18
+def is_adult(agee):
+    return agee >= 18
     #return True or False
 
-age1 = [14,19,19.20]
+age1 = [14, 19, 20, 25]
 filter(is_adult, age1)
+print(list(filter(is_adult, age1)))
+
+
+#Lambda
+age = [14, 19, 20, 25]
+lbd = lambda age: age >= 18
+print(list(filter(lbd, age)))
+
+#example
+list(filter(lambda age: age >= 18, age))
+
+multi = lambda x,y: x*y
+multi(2,3)
+print(multi(2,3))
+
+
+
 
 
 
