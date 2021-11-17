@@ -23,13 +23,21 @@ msg=print_message('aabaa')
 msg=print_message('aabdaa')
 print(msg)
 
-# many argumunts
+# many arguments  *args
 def print_message(*args):
     for x in args:
         print(x)
     return sum(args)*0.06
 
 msg=print_message(10,2,3,4)
+print(msg)
+
+# many arguments  **kwargs
+def print_kwargs(**kwargs):
+    for k, v  in kwargs.items():
+        print(k, v)
+
+msg=print_kwargs(first_name = 'Bobby', last_name = 'Smith', first_name1 = 'Bobby', last_name1 = 'Smith')
 print(msg)
 
 
