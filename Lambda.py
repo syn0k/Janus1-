@@ -37,6 +37,8 @@ print(pr_age)
 ages = [17, 18, 11, 20]
 p = lambda age1: age1 >= 18
 print(list(filter(p, ages)))
+print(list(filter(lambda age1: age1 >= 18, ages)))
+
 
 
 
