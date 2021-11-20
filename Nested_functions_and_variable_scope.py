@@ -6,8 +6,7 @@ greeting = "Hello from the global scope"
 x: int = 1
 
 def greet():
-    #enclosing scope
-    greeting = "Hello from the enclosing scope"
+    greeting = "Hello from the enclosing scope"  #enclosing scope
 
     def nested():
         #local scope
@@ -16,10 +15,10 @@ def greet():
     nested()
 
 greet()
-print(greeting)
+print(f'Global scope - {greeting}')
 
 
-#example 2
+# #example 2
 print('#example 2')
 #global scope
 greeting = "Hello from the global scope"
