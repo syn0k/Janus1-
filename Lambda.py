@@ -24,3 +24,19 @@ for x in map(square, numbers):
 pr_list=list(map(square, numbers))
 print(pr_list)
 
+
+def f_age(age):
+    return age >= 18
+
+age = [17,18,11,20]
+pr_age=list(filter(f_age, age))
+print(pr_age)
+
+#Lambda example
+
+ages = [17, 18, 11, 20]
+p = lambda age1: age1 >= 18
+print(list(filter(p, ages)))
+
+
+
