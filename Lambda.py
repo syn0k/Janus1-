@@ -39,6 +39,11 @@ p = lambda age1: age1 >= 18
 print(list(filter(p, ages)))
 print(list(filter(lambda age1: age1 >= 18, ages)))
 
+sum_a = lambda x,y : (x+y)+1
+print(sum_a(10, 1))
+
+
+
 
 
 
