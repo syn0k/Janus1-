@@ -1,5 +1,6 @@
 #example 1
 greeting = "Hello from the global scope"
+x: int = 1
 
 def greet():
     greeting = "Hello from the enclosing scope"
@@ -30,7 +31,6 @@ def greet(greeting):
 
 greet('test')
 print(greeting)
-
 
 
 
