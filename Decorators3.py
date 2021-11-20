@@ -78,3 +78,16 @@ def function_print_society(inst, tel, vk, yt, tv):
 
 function_print_society('https://www.instagram.com/py_lounge', 'https://t.me/pylounge', 'https://vk.com/pylounge',
               'https://www.youtube.com/channel/UCru5', 'https://twitter.com/pylounge')
+
+print('Exapmle 4 '*3)
+def mess_head_tail(func):
+    print('Head hello')
+    func()
+    print('Head Tail')
+    return func
+
+@mess_head_tail
+def print_mess():
+    print('hello world')
+
+print_mess
