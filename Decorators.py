@@ -26,7 +26,7 @@ def hello_world2():
 
 hello_world()
 hello_world2()
-
+print('-'*100)
 
 def message_print(func):
     def wrapper():
