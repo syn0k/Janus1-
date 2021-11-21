@@ -67,8 +67,6 @@ try:
     print(printsq)
 except InvalidTriangleError as ex:
     print(ex)
-else:
-    print(printsq)
 
 
 #Unit testing basics
