@@ -57,8 +57,19 @@ def calc_square(ab, ac, ad):
 
     return s
 
-printsq = calc_square(-10,12,12)
+printsq = calc_square(10,12,12)
 print(printsq)
+
+print('Example: 5')
+
+try:
+    printsq = calc_square(-10, 12, 12)
+    print(printsq)
+except InvalidTriangleError as ex:
+    print(ex)
+else:
+    print(printsq)
+
 
 #Unit testing basics
 print('Unit testing basics')
