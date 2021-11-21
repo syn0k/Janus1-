@@ -1,11 +1,11 @@
 import unittest
 import code_testing
 
-class FizzBuzzTest(unitTest.TestCase):
+class FizzBuzzTests(unittest.TestCase):
 
     def test_fizz(self):
         number=6
-        result=code_testing.get_reply(number)
+        result= code_testing.get_reply(number)
         self.assertEqual(result, 'Fizz')
 
     def test_buzz(self):
