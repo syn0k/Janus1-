@@ -1,8 +1,8 @@
 # function
 
 # Example HelloWorld with function
-def print_message(msg):
-    print(msg)
+def print_message(msg1):
+    print(msg1)
 
 print_message("Hello World")
 
