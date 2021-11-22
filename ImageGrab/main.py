@@ -3,4 +3,6 @@ import datetime
 import os
 
 img = ImageGrab.grab()
-img.save('screen.png', 'PNG')
+my_time = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+file_name =  "my_" + my_time + ".jpg"
+img.save(file_name, "JPEG")
