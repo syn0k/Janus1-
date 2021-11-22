@@ -31,4 +31,8 @@ $RECYCLE.BIN/
 # intellij configs
 .idea/
 
+# pic
+*.png
+*.jpg
+
 # End of https://www.toptal.com/developers/gitignore/api/windows
