@@ -1,3 +1,4 @@
+# Syntactic sugar
 #print(walrys := True)
 
 # input1 = int(input("Enter the number"))
