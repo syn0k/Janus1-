@@ -14,11 +14,22 @@ user_agent_list = [
 ]
 
 
-#url = "https://automonth.ru/marki-avtomobilej/"
+
+
 url = "https://quotes.toscrape.com/"
 user_agent = random.choice(user_agent_list)
 headers = {'User agent': user_agent}
 response = requests.get(url=url, headers=headers)
 soup = BeautifulSoup(response.text, 'lxml')
 
-print(soup)
+quotes = soup.find_all({"span"}, {"text"})
+authors = soup.find_all('small', class_='author')
+
+for i in range(0, len(quotes)):
+    print(quotes[i].text)
+    print('--' + authors[i].text)
+
+
+
+
+
