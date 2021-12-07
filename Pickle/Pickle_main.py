@@ -19,3 +19,14 @@ print(c.health)
 with open(r"c:\test.bin", "w+b") as f:
     pickle.dump(c, f)
 
+c = None
+print(c)
+
+with open(r"c:\test.bin", "rb") as f:
+    c = pickle.load(f)
+
+print(c.health)
+print(c.__dict__)
+
+
+
