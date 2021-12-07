@@ -46,3 +46,5 @@ stack.push(6)
 for i in stack:
     print(i)
 
+
+
