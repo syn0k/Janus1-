@@ -1,4 +1,5 @@
 import ujson
+# parsing file example.json
 
 with open("example.json", "r") as f:
     file_json = ujson.load(f)
