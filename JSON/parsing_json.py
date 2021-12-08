@@ -30,10 +30,9 @@ for k, v in file_json.items():
         print(v)
 
     if k == "hobbies":
-        print("hobbies:")
+        print("hobbies count:",  len(v))
         crate_list_hobbies(v)
 
     if k == "children":
         print("children count:", len(v))
-
         crate_list_children(v)
