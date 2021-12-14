@@ -25,6 +25,3 @@ for weapon in Weapon:
 
 for weapon in Weapon:
     print(weapon.name, weapon.value)
-
-
-
