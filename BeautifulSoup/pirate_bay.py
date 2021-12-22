@@ -18,9 +18,9 @@ url = "https://filmehd.se/"
 responses = requests.get(url=url, headers=headers)
 soup = BeautifulSoup(responses.text, "lxml")
 
-title = soup.find_all("div", class_="desright")
+title = soup.find(class_="desright").find_parents()
 for x in title:
-    name_text = x.text
+    name_text = x.text.strip()
     print(name_text)
 
 
