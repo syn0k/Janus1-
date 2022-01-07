@@ -1,4 +1,5 @@
 import socket
+import subprocess
 
 sc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
@@ -15,6 +16,7 @@ try:
             #answer = "Hello back"
             bytes = bytes(message_back, 'utf-8')
             sc.send(bytes)
+
     sc.close()
 except:
     print("Connection fail")
